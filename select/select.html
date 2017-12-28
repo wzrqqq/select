@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../vue.js"></script>
+    <script src="components.js"></script>
+    <style>
+        #root{
+            width: 200px;
+            height: 400px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <inputdata @event="event"  :title="title"></inputdata>
+        <listdata :data="list" :state="state" @custom="custom"></listdata>
+    </div>
+</body>
+<script src="app.js"></script>
